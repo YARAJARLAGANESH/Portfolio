@@ -2,6 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <style>
+      html, body { background-color: #1a1612; color: #f7f4f0; }
+      *, *::before, *::after { box-sizing: border-box; }
+      *, *::before, *::after {
+        outline: none !important;
+        box-shadow: none;
+      }
+      button, a, [role="button"], nav, aside {
+        color: inherit;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      button, a, [role="button"], [tabindex] {
+        outline: none !important;
+        border-color: transparent;
+      }
+      button:not([class]) {
+        appearance: none;
+        background: transparent;
+        border: none;
+        color: inherit;
+      }
+      aside a, aside a:link, aside a:visited,
+      [data-sidebar] a, [data-sidebar] a:link,
+      .sidebar a, .sidebar a:link {
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        text-decoration: none !important;
+        color: inherit !important;
+        background: transparent !important;
+      }
+      *:focus { outline-color: #8a6a45; }
+      *:focus-visible { outline-color: #8a6a45; }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ganesh Yarajarla Portfolio</title>
   </head>

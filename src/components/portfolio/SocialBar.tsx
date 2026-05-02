@@ -24,7 +24,7 @@ export function SocialBar() {
             }
           }}
           aria-label={label}
-          className="group relative h-11 w-11 rounded-full border border-border bg-card/60 backdrop-blur-sm flex items-center justify-center text-muted-foreground hover:text-accent hover:border-accent transition-all duration-300 hover:glow-rust"
+          className="group relative h-11 w-11 rounded-full border border-border bg-card/60 backdrop-blur-sm flex items-center justify-center text-muted-foreground hover:text-accent hover:border-accent transition-all duration-300 hover:glow-rust outline-none border-0 no-underline"
         >
           <Icon className="h-4 w-4" />
           <span className="absolute left-full ml-3 px-2 py-1 text-xs rounded-md bg-card border border-border opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all whitespace-nowrap pointer-events-none">
