@@ -36,12 +36,128 @@
       }
       *:focus { outline-color: #8a6a45; }
       *:focus-visible { outline-color: #8a6a45; }
+      #splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background-color: #1a1612;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                    visibility 0.6s ease;
+      }
+
+      #splash.hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .splash-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .splash-ring-wrap {
+        position: relative;
+        width: 140px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .splash-ring {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+      }
+
+      .splash-ring-track {
+        fill: none;
+        stroke: #2e2318;
+        stroke-width: 6;
+      }
+
+      .splash-ring-fill {
+        fill: none;
+        stroke: url(#splashGradient);
+        stroke-width: 6;
+        stroke-linecap: round;
+        stroke-dasharray: 314;
+        stroke-dashoffset: 314;
+        animation: splash-ring-spin 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+
+      .splash-initials {
+        position: relative;
+        display: flex;
+        gap: 4px;
+        z-index: 1;
+      }
+
+      .splash-initials span {
+        font-family: 'Inter', sans-serif;
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: #f5f0eb;
+        opacity: 0;
+        animation: splash-pop 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+      }
+
+      .splash-initials span:nth-child(2) {
+        animation-delay: 0.45s;
+      }
+
+      @keyframes splash-ring-spin {
+        0%   { stroke-dashoffset: 314; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      @keyframes splash-pop {
+        from { opacity: 0; transform: scale(0.7); }
+        to   { opacity: 1; transform: scale(1); }
+      }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ganesh Yarajarla Portfolio</title>
   </head>
   <body>
+    <div id="splash">
+      <div class="splash-content">
+        <div class="splash-ring-wrap">
+          <svg class="splash-ring" viewBox="0 0 120 120">
+            <defs>
+              <linearGradient id="splashGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c4956a"/>
+                <stop offset="100%" stop-color="#c1543a"/>
+              </linearGradient>
+            </defs>
+            <circle class="splash-ring-track" cx="60" cy="60" r="50"/>
+            <circle class="splash-ring-fill" cx="60" cy="60" r="50"/>
+          </svg>
+          <div class="splash-initials">
+            <span>G</span><span>Y</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.addEventListener('load', function () {
+        var splash = document.getElementById('splash');
+        if (splash) {
+          setTimeout(function () {
+            splash.classList.add('hidden');
+            setTimeout(function () { splash.remove(); }, 600);
+          }, 2200);
+        }
+      });
+    </script>
   </body>
 </html>
