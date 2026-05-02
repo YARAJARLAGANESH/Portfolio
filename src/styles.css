@@ -81,6 +81,16 @@
 
 @layer base {
   * { border-color: var(--color-border); }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
   html { scroll-behavior: smooth; }
   body {
     background-color: var(--color-background);
