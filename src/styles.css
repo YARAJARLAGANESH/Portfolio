@@ -111,6 +111,7 @@
   }
   html { scroll-behavior: smooth; }
   body {
+    overflow-x: hidden;
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
@@ -180,7 +181,7 @@
   .marquee-item {
     display: inline-block;
     margin-right: 50px ;
-    font-size: clamp(3.35rem, 5.2vw, 5.75rem);
+    font-size: clamp(2rem, 8vw, 5.75rem);
     font-weight: 1000;
     letter-spacing: 0.01em;
     color: var(--color-foreground);
@@ -200,4 +201,5 @@
     50% { box-shadow: 0 0 30px -2px oklch(0.55 0.085 55 / 0.7); }
   }
   .animate-glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }
+
 }

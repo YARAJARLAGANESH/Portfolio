@@ -88,9 +88,9 @@ export function Hero() {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.35 }}
-        className="absolute top-6 right-6 md:top-10 md:right-10 z-20 text-right max-w-[200px] md:max-w-xs"
+        className="absolute top-6 right-4 md:top-10 md:right-10 z-20 text-right max-w-[140px] md:max-w-xs"
       >
-        <p className="text-[11px] md:text-xs text-muted-foreground leading-relaxed font-mono">
+        <p className="text-[9px] sm:text-[10px] md:text-xs text-muted-foreground leading-relaxed font-mono">
           crafting intelligent systems and
           <br />
           exceptional AI-powered experiences
@@ -100,8 +100,8 @@ export function Hero() {
       </motion.div>
 
       {/* CENTER: Full portrait photo with cursor parallax */}
-      <div className="absolute inset-0 flex items-end justify-center z-10 pointer-events-none">
-        <div ref={photoRef} className="will-change-transform">
+      <div className="relative z-10 mt-2 flex justify-center md:mt-0"> 
+         <div ref={photoRef} className="will-change-transform">
           <motion.img
             src={profilePhoto}
             alt="Ganesh Yarajarla — Developer & Prompt Engineer"
@@ -109,13 +109,13 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.97, y: 24 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="h-[105vh] md:h-[105vh] w-auto object-contain select-none"
+            className="h-[42vh] sm:h-[52vh] md:h-[105vh] w-[400px] sm:w-[400px] md:w-[1400px]"
             style={{
               maskImage: "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
               WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
               filter: "contrast(1.05) brightness(0.9)",
             }}
-          />
+          />                                                                        
         </div>
       </div>
 
@@ -124,12 +124,11 @@ export function Hero() {
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.9, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute right-6 md:right-10 lg:right-14 top-1/2 -translate-y-1/2 z-20 text-right"
-      >
-        <p className="text-[10px] md:text-xs font-mono uppercase tracking-[0.45em] text-accent mb-3">
-          Creative
+        className="absolute top-1/2 right-6 md:right-10 transform -translate-y-1/2 z-20 text-right max-w-[180px] sm:max-w-[240px] md:max-w-[300px]">
+        <p className="mb-2 text-sm tracking-[0.4em] text-orange-500 md:text-base">
+          CREATIVE
         </p>
-        <div className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-[1.15]">
+        <div className="text-lg sm:text-2xl md:text-4xl font-bold tracking-tight leading-[1.15]">
           <span className="block text-foreground">Developer &amp;</span>
           <span className="block text-foreground">Prompt Engineer</span>
         </div>
@@ -138,7 +137,7 @@ export function Hero() {
       {/* BOTTOM: Marquee */}
       <div
         ref={marqueeRef}
-        className="absolute bottom-15 w-full will-change-transform"
+        className="absolute bottom-24 md:bottom-15 w-full will-change-transform"
         style={{
           ["--mqx" as string]: "0px",
           ["--mqy" as string]: "0px",
@@ -147,8 +146,8 @@ export function Hero() {
       >
         <div className="marquee">
           <div className="marquee-track">
-            <span className="marquee-item">Developer • Prompt Engineer • Video Editor • </span>
-            <span className="marquee-item">Developer • Prompt Engineer • Video Editor • </span>
+            <span className="marquee-item">Developer • Prompt Engineer • Video Editor •</span>
+            <span className="marquee-item">Developer • Prompt Engineer • Video Editor •</span>
           </div>
         </div>  
       </div>
