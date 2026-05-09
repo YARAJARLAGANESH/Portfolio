@@ -109,7 +109,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.97, y: 24 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="h-[42vh] sm:h-[52vh] md:h-[105vh] w-[400px] sm:w-[400px] md:w-[1400px]"
+            className="h-[52vh] sm:h-[52vh] md:h-[95vh]  object-cover rounded-lg shadow-lg"
             style={{
               maskImage: "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
               WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
@@ -124,7 +124,7 @@ export function Hero() {
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.9, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute top-1/2 right-6 md:right-10 transform -translate-y-1/2 z-20 text-right max-w-[180px] sm:max-w-[240px] md:max-w-[300px]">
+        className="absolute top-1/4 md:top-1/2 right-6 md:right-10 transform -translate-y-1/2 z-20 text-right max-w-[180px] sm:max-w-[240px] md:max-w-[300px]">
         <p className="mb-2 text-sm tracking-[0.4em] text-orange-500 md:text-base">
           CREATIVE
         </p>
@@ -137,7 +137,7 @@ export function Hero() {
       {/* BOTTOM: Marquee */}
       <div
         ref={marqueeRef}
-        className="absolute bottom-24 md:bottom-15 w-full will-change-transform"
+        className="absolute bottom-29 md:bottom-15 w-full will-change-transform"
         style={{
           ["--mqx" as string]: "0px",
           ["--mqy" as string]: "0px",
