@@ -52,7 +52,9 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section
+  id="home"
+  className="relative min-h-screen w-full overflow-x-hidden overflow-y-hidden flex items-center justify-center">
       {/* Background warm gradient */}
       <div
         aria-hidden
@@ -100,7 +102,7 @@ export function Hero() {
       </motion.div>
 
       {/* CENTER: Full portrait photo with cursor parallax */}
-      <div className="relative z-10 mt-2 flex justify-center md:mt-0"> 
+      <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none"> 
          <div ref={photoRef} className="will-change-transform">
           <motion.img
             src={profilePhoto}
@@ -109,7 +111,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.97, y: 24 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="h-[52vh] sm:h-[52vh] md:h-[95vh]  object-cover rounded-lg shadow-lg"
+            className="h-[52vh] sm:h-[52vh] md:h-[95vh] object-cover rounded-lg shadow-lg"
             style={{
               maskImage: "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
               WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
@@ -137,7 +139,7 @@ export function Hero() {
       {/* BOTTOM: Marquee */}
       <div
         ref={marqueeRef}
-        className="absolute bottom-29 md:bottom-15 w-full will-change-transform"
+        className="absolute bottom-24 md:bottom-15 left-0 w-full overflow-hidden will-change-transform"
         style={{
           ["--mqx" as string]: "0px",
           ["--mqy" as string]: "0px",
