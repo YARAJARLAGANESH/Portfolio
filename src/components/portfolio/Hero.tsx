@@ -139,7 +139,7 @@ export function Hero() {
       {/* BOTTOM: Marquee */}
       <div
         ref={marqueeRef}
-        className="absolute bottom-24 md:bottom-15 left-0 w-full overflow-hidden will-change-transform"
+        className="absolute bottom-39 md:bottom-15 left-0 w-full overflow-hidden will-change-transform"
         style={{
           ["--mqx" as string]: "0px",
           ["--mqy" as string]: "0px",
