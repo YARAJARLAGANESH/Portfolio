@@ -54,7 +54,7 @@ export function Hero() {
   return (
     <section
   id="home"
-  className="relative min-h-screen w-full overflow-x-hidden overflow-y-hidden flex items-center justify-center">
+  className="relative min-h-screen w-full overflow-x-hidden overflow-y-hidden">
       {/* Background warm gradient */}
       <div
         aria-hidden
@@ -102,7 +102,7 @@ export function Hero() {
       </motion.div>
 
       {/* CENTER: Full portrait photo with cursor parallax */}
-      <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none"> 
+      <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none md:items-center"> 
          <div ref={photoRef} className="will-change-transform">
           <motion.img
             src={profilePhoto}
@@ -111,7 +111,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.97, y: 24 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="h-[52vh] sm:h-[52vh] md:h-[95vh] object-cover rounded-lg shadow-lg"
+            className="h-[50vh] sm:h-[50vh] md:h-[95vh] max-h-[900px] aspect-auto object-cover rounded-2xl shadow-lg"
             style={{
               maskImage: "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
               WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 65%, transparent 100%)",
@@ -148,8 +148,10 @@ export function Hero() {
       >
         <div className="marquee">
           <div className="marquee-track">
-            <span className="marquee-item">Developer • Prompt Engineer • Video Editor •</span>
-            <span className="marquee-item">Developer • Prompt Engineer • Video Editor •</span>
+            <span className="marquee-item">Developer •  Prompt Engineer  •  Video Editor •</span>
+            <span className="marquee-item">Developer •  Prompt Engineer  •  Video Editor •</span>
+            <span className="marquee-item">Developer •  Prompt Engineer  •  Video Editor •</span>
+            <span className="marquee-item">Developer •  Prompt Engineer  •  Video Editor •</span>
           </div>
         </div>  
       </div>
