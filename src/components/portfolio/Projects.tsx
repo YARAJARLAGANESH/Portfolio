@@ -7,7 +7,7 @@ const projects = [
     title: "Tourism Management System",
     desc: "Full Stack Web Application | PHP, MySQL. Developed a role-based tourism platform supporting users and administrators with secure authentication, booking system, and package management. Built an admin dashboard to manage users, packages, and bookings. Designed a relational database schema and deployed locally using XAMPP.",
     stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/YARAJARLAGANESH/tourism-management-system", live: "#",
+    github: "https://github.com/YARAJARLAGANESH/tourism-management-system", live: "https://sanchari.infinityfreeapp.com/",
   },
   {
     title: "Car Price Prediction System",
