@@ -13,19 +13,19 @@ const projects = [
     title: "Car Price Prediction System",
     desc: "Machine Learning Application | Python, Scikit-learn, Flask. Built a regression-based ML system to predict car prices using structured data (~1K records). Implemented and compared Linear Regression and Random Forest, achieving ~94% R² score. Developed a Flask backend for real-time inference.",
     stack: ["Python", "Scikit-learn", "Flask"],
-    github: "https://github.com/YARAJARLAGANESH/ShadowFox/tree/main/Intermediate/car_price_prediction", live: "",
+    github: "https://github.com/YARAJARLAGANESH/ShadowFox/tree/main/Intermediate/car_price_prediction", live: "https://car-price-predictor-s9qu.onrender.com",
   },
   {
     title: "Syllabus AI – Multi-Agent Content Generator",
     desc: "AI System | Python, LLM Architecture. Designed a multi-agent system (Planner, Worker, Evaluator) for automated syllabus processing. Transformed raw syllabus text into structured chapters, objectives, subtopics, MCQs, and resources. Built using Python with modular architecture and deployed prototype via Hugging Face.",
     stack: ["Python", "LLM Architecture", "Jupyter Notebook"],
-    github: "https://github.com/YARAJARLAGANESH/Syllabus-AI", live: "",
+    github: "https://github.com/YARAJARLAGANESH/Syllabus-AI", live: "http://github.com/YARAJARLAGANESH/Syllabus-AI/blob/main/index.html",
   },
   {
     title: "SafeLine AI – Emergency Call Triage System",
     desc: "AI Workflow System | n8n, LLM Integration. Developed an AI-powered triage system to prioritize emergency calls based on risk levels. Designed workflow: Speech/Text → AI Analysis → Risk Scoring → Priority Classification. Integrated Google Gemini for semantic analysis and decision-making.",
     stack: ["n8n", "LLM Integration", "Google Gemini"],
-    github: "https://github.com/YARAJARLAGANESH/SafeLine-AI", live: "",
+    github: "https://github.com/YARAJARLAGANESH/SafeLine-AI", live: "https://safeline-ai.n8n.cloud",
   },
 ];
 
