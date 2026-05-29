@@ -4,10 +4,10 @@ import { GraduationCap } from "lucide-react";
 
 const items = [
   {
-    degree: "Bachelor of Technology — AI & Machine Learning",
+    degree: "Bachelor of Technology — AI & ML",
     school: "Acharya Nagarjuna University",
     year: "Sep 2025 — Jun 2028",
-    cgpa: "CGPA: 9.2 / 10 (ongoing)",
+    cgpa: "CGPA: 9.02 / 10 (ongoing)",
     points: ["Lateral entry into 2nd year (AIML specialization)", "Focus on ML, prompt engineering, applied Python"],
   },
   {
