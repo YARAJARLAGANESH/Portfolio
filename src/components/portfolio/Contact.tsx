@@ -118,7 +118,7 @@ export function Contact() {
             </a>
 
             <a
-              href="https://github.com/ganeshyarajarla"
+              href="https://github.com/YARAJARLAGANESH"
               target="_blank"
               rel="noreferrer"
               className="
@@ -139,7 +139,7 @@ export function Contact() {
               <Github className="h-4 w-4 shrink-0" />
 
               <span className="text-xs sm:text-sm font-mono break-all">
-                github.com/ganeshyarajarla
+                https://github.com/YARAJARLAGANESH
               </span>
             </a>
 

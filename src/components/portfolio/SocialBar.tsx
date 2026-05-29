@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import resumeFile from "@/assets/Ganesh_RESUME.pdf";
 
 const socials = [
-  { icon: Github, href: "https://github.com/", label: "GitHub" },
+  { icon: Github, href: "https://github.com/YARAJARLAGANESH", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/ganeshyarajarla", label: "LinkedIn" },
   { icon: Mail, href: "mailto:ganeshyarajarla35@gmail.com", label: "Email" },
   { icon: FileText, href: resumeFile, label: "Resume", download: "Ganesh_Resume.pdf" },
